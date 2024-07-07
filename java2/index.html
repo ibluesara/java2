@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      debugger;
+
+      let linksArry = [
+        { name: "خانه", URL: "https://www.w3schools.com/", tooltip: "خانه ما" },
+        {
+          name: "درباره ما",
+          URL: "https://www.w3schools.com/css/default.asp",
+          tooltip: "درباره ما",
+        },
+        {
+          name: "تماس با ما",
+          URL: "https://www.w3schools.com/css/css_selectors.asp",
+          tooltip: "تماس با ما",
+        },
+      ];
+      let txtHTML = "";
+      for (let i = 0; i < linksArry.length; i++) {
+        txtHTML +=
+          "<a title='hello' style='margin-right:30px' target='_blank' href=' " +
+          linksArry[i].URL +
+          "'>" +
+          linksArry[i].name +
+          "</a>";
+      }
+      document.getElementById("demo").innerHTML = txtHTML;
+    </script>
+  </body>
+</html>
